@@ -1,4 +1,6 @@
-# Start Here
+# Starting Setup
+
+You have a new computer, and there are so many thingie-ma-bobs that need to go through, here are the different things.
 
 ## General Setup
 

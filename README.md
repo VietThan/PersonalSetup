@@ -6,14 +6,20 @@
 2. Clone and install dependencies
 
     ```console
-    $ git clone https://github.com/VietThan/PersonalSetup.git
-    $ cd PersonalSetup
-    $ python3.11 -m venv venv
-    $ venv/bin/python -m pip install -r requirements.txt
+    git clone https://github.com/VietThan/PersonalSetup.git
+    cd PersonalSetup
+    python3.11 -m venv venv
+    venv/bin/python -m pip install -r requirements.txt
     ```
 
 3. Serve
 
     ```console
-    $ venv/bin/mkdocs serve
+    venv/bin/mkdocs serve
+    ```
+
+## Push to Github Pages
+
+    ```console
+    venv/bin/mkdocs gh-deploy
     ```
