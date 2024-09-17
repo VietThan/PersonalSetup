@@ -8,29 +8,16 @@ repo_url: https://github.com/VietThan/PersonalSetup
 
 
 nav:
-  - 'Home': 
+  - 'General Setup': 
     - 'index.md'
     - 'Shell Setup' : 'shell-setup.md'
     - 'VSCode Setup' : 'vscode-setup.md'
-  - 'Mac':
+  - 'Mac Setup':
     - 'mac/index.md'
-  # - 'Development' :
-  #   - 'Getting Started' : 'development/getting-started.md'
-  #   - 'VSCode Setup' : 'development/vscode-setup.md'
-  #   - 'Pycharm Setup' : 'development/pycharm-setup.md'
-  #   - 'Pre-Commit Setup' : 'development/pre-commit-setup.md'
-  #   - 'Testing' : 'development/testing.md'
-  #   - 'Managing Dependencies' : 'development/managing-dependencies.md'
-  # - 'Projects' :
-  #     - 'Promify API' :
-  #       - 'Overview' : 'projects/promify-api/index.md'
-  #       - 'Setup' : 'projects/promify-api/promify-api-setup.md'
-  #       - 'Services' :
-  #         - 'Promify API' : 'projects/promify-api/services/promify-api-service.md'
-  #         - 'Websockify Bridge' : 'projects/promify-api/services/websockify-bridge.md'
-  #       - 'History' : 'projects/promify-api/history.md'
-  # - 'Monitoring & Logging' : 'monitoring-and-logging.md'
-  # - 'Code References' : references/
+  - 'Linux Setup':
+    - 'linux/index.md'
+  - 'Windows Setup':
+    - 'windows/index.md'
 
 markdown_extensions:
   - admonition # very useful to make tooltips or collapsibles : https://squidfunk.github.io/mkdocs-material/reference/admonitions/
