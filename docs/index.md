@@ -9,4 +9,6 @@ You have a new computer, and there are so many thingie-ma-bobs that need to go t
 
 ## Specific OS setup
 
-1. [Mac](./mac/index.md)
+1. [:simple-apple: Mac Setup](./mac/index.md)
+3. [:simple-linux: Linux Setup](./linux/index.md)
+2. [:fontawesome-brands-windows: Windows Setup](./windows/index.md)
