@@ -8,16 +8,20 @@ repo_url: https://github.com/VietThan/PersonalSetup
 
 
 nav:
+  - 'Starting Point' : 'index.md'
   - 'General Setup': 
-    - 'index.md'
-    - 'Shell Setup' : 'shell-setup.md'
-    - 'VSCode Setup' : 'vscode-setup.md'
-  - 'Mac Setup':
-    - 'mac/index.md'
-  - 'Linux Setup':
-    - 'linux/index.md'
-  - 'Windows Setup':
-    - 'windows/index.md'
+    - 'Shell Setup' : 'general/shell-setup.md'
+    - 'VSCode Setup' : 'general/vscode-setup.md'
+  - 'OS Setup':
+    - 'Mac Setup':
+      - 'os/mac/index.md'
+    - 'Linux Setup':
+      - 'os/linux/index.md'
+    - 'Windows Setup':
+      - 'os/windows/index.md'
+  - 'Languages':
+    - 'languages/index.md'
+    - 'Python Setup': 'languages/python-setup.md'
 
 markdown_extensions:
   - admonition # very useful to make tooltips or collapsibles : https://squidfunk.github.io/mkdocs-material/reference/admonitions/
