@@ -13,7 +13,7 @@ Reading order matters.
 
 1. [:simple-apple: Mac Setup](./os/mac/index.md).
 3. [:simple-linux: Linux Setup](./os/linux/index.md).
-2. [:fontawesome-brands-windows: Windows Setup](./os/.windows/index.md)
+2. [:fontawesome-brands-windows: Windows Setup](./os/windows/index.md)
 
 ## :speech_balloon: 3. Language setup
 

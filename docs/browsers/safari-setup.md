@@ -1,0 +1,1 @@
+# :simple-safari: Safari Setup

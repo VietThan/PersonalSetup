@@ -12,7 +12,7 @@ nav:
   - 'General Setup': 
     - 'Shell Setup' : 'general/shell-setup.md'
     - 'VSCode Setup' : 'general/vscode-setup.md'
-  - 'OS Setup':
+  - 'Operating Systems':
     - 'Mac Setup':
       - 'os/mac/index.md'
     - 'Linux Setup':
@@ -22,6 +22,13 @@ nav:
   - 'Languages':
     - 'languages/index.md'
     - 'Python Setup': 'languages/python-setup.md'
+  - 'Tools':
+    - 'AWS Setup' : 'tools/aws-setup.md'
+    - 'Wireshark Setup' : 'tools/wireshark-setup.md'
+  - 'Browsers':
+    - 'Chrome Setup' : 'browsers/chrome-setup.md'
+    - 'Firefox Setup' : 'browsers/firefox-setup.md'
+    - 'Safari Setup' : 'browsers/safari-setup.md'
 
 markdown_extensions:
   - admonition # very useful to make tooltips or collapsibles : https://squidfunk.github.io/mkdocs-material/reference/admonitions/
