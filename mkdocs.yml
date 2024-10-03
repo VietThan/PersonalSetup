@@ -23,6 +23,7 @@ nav:
     - 'languages/index.md'
     - 'Python Setup': 'languages/python-setup.md'
   - 'Tools':
+    - 'tools/index.md'
     - 'AWS Setup' : 'tools/aws-setup.md'
     - 'Wireshark Setup' : 'tools/wireshark-setup.md'
   - 'Browsers':
