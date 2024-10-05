@@ -2,6 +2,10 @@
 
 ## 1. Top Line
 
+0. :simple-iterm2: [iTerm2](https://iterm2.com/) is terminal of choice (over the Mac default).
+    1. Change key mappings to [Natural Text Editing](https://superuser.com/a/1157575) to use `Option + <arrow keys>` to move around on the terminal.
+        1. Goto Settings: `⌘ + ,` → `Profiles` → `Keys` → `Key Mappings`
+        2. Under `Presets..`, change `Natural Text Editing`
 1. [install :simple-zsh: zsh for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
     1. Although I'm seeing more and more arguments for using [:simple-fishshell: fish](https://fishshell.com/).
 2. [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) just to "feel like a better programmer" because I will be the first to admit I don't fully use all its capabilities.

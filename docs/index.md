@@ -2,7 +2,7 @@
 
 You have a new computer, and there are so many thingie-ma-bobs that need to go through, here are the different things.
 
-Reading order matters.
+Reading order semi-matters.
 
 ## :material-wrench: 1. General Setup
 
