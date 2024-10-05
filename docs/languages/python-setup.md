@@ -1,6 +1,6 @@
 # :simple-python: Python Setup
 
-## System Wide Python with `pyenv`
+## 1. System Wide Python with `pyenv`
 
 If you're on Linux or Mac, there is already Python installed and you can use `python` on the command line out of the box. 
 However, it's usually out of date.
@@ -41,4 +41,160 @@ But it's not advisable to upgrade your system python because all kinds of errors
 
 [1]: https://github.com/pyenv/pyenv
 
+## 2. Single Project
 
+### 2.1. Bare (no dependency management)
+At the very least use python's standard [venv](https://docs.python.org/3/library/venv.html) and a [requirements.txt](https://realpython.com/what-is-pip/#using-requirements-files).
+
+Standard commands:
+
+```{ ..console }
+$ mkdir new_project
+$ cd new_project
+$ python3.11 -m venv venv
+```
+
+Do some coding using the venv and save the packages.
+
+```{ ..console }
+$ cd new_project
+$ venv/bin/python -m pip install requests
+$ venv/bin/python -m pip freeze > requirements.txt
+```
+
+### 2.2. Dependencies Manager
+I am familiar with [PDM](https://pdm-project.org/) and [poetry](https://python-poetry.org/). 
+They themselves also rely on python's standard `venv` (mentioned above).
+
+???+ note "Viet's Note"
+
+    I am marginally excited about [uv](https://github.com/astral-sh/uv).
+
+#### 2.3. Local `.venv`
+It is important to always have a local `.venv` per project.
+This is to not cross-contaminate dependencies between different projects. And also makes it easy to package your project for pypi in the future.
+
+If using `poetry`, enable [virtualenvs.in-project](https://python-poetry.org/docs/configuration/#virtualenvsin-project) to `true`:
+
+```{ ..console }
+$ cd a_poetry_project
+$ cat poetry.toml
+[virtualenvs]
+in-project = true
+```
+
+This would ensure the creation of a `.venv` managed by the dependency manager, containing the installed dependencies of the project
+
+`pdm` creates local `.venv` out of the box.
+
+As such, in any project, you can expect the following structure:
+
+```
+.
+└── my-python-project/
+    ├── .venv/
+    │   ├── bin/
+    │   │   └── python
+    │   └── lib/
+    │       └── ...
+    ├── src/
+    │   └── my_python_project/
+    │       ├── __init__.py
+    │       └── main.py
+    ├── tests/
+    │   ├── __init__.py
+    │   └── test_main.py
+    ├── pyproject.toml
+    ├── README.md
+    └── pdm.lock_or_poetry.lock
+```
+
+## 3. Monorepo Python
+Parent `VENV` with a `.helper_rc` (contains any bash commands you want). Each project has their own `.venv`.
+
+See the example in the expand:
+
+??? note "Viet's Note"
+
+    ```
+    .
+    └── Big-MonoRepo/
+        ├── Lib-A/
+        │   ├── .venv/
+        │   │   ├── bin/
+        │   │   │   └── python
+        │   │   └── lib/
+        │   │       └── ...
+        │   ├── src/
+        │   │   └── lib_a/
+        │   │       ├── __init__.py
+        │   │       └── main.py
+        │   ├── tests/
+        │   │   ├── __init__.py
+        │   │   └── test_main.py
+        │   ├── pyproject.toml
+        │   ├── README.md
+        │   └── pdm.lock
+        ├── Service-A/
+        │   ├── .venv/
+        │   │   ├── bin/
+        │   │   │   └── python
+        │   │   └── lib/
+        │   │       └── ...
+        │   ├── src/
+        │   │   └── service_a/
+        │   │       ├── __init__.py
+        │   │       └── main.py
+        │   ├── tests/
+        │   │   ├── __init__.py
+        │   │   └── test_main.py
+        │   ├── pyproject.toml
+        │   ├── README.md
+        │   └── pdm.lock
+        ├── Service-B/
+        │   ├── .venv/
+        │   │   ├── bin/
+        │   │   │   └── python
+        │   │   └── lib/
+        │   │       └── ...
+        │   ├── src/
+        │   │   └── service_b/
+        │   │       ├── __init__.py
+        │   │       └── main.py
+        │   ├── tests/
+        │   │   ├── __init__.py
+        │   │   └── test_main.py
+        │   ├── pyproject.toml
+        │   ├── README.md
+        │   └── pdm.lock
+        ├── venv/
+        │   ├── bin/
+        │   │   └── python
+        │   └── lib/
+        │       └── ...
+        ├── docs/
+        │   └── index.md
+        ├── mkdocs.yaml
+        ├── docker-compose.yaml
+        ├── .gitignore
+        ├── .pre-commit-config.yaml
+        └── big-monorepo.code-workspace # vscode workspace
+    ```
+
+### 3.1. Packages depend on local libs
+
+In the example above, let's say Service-A and Service-B relies on Lib-A, what to do?
+
+1. `poetry` calls them [path dependencies](https://python-poetry.org/docs/dependency-specification/#path-dependencies). Note the `develop` attribute.
+2. `pdm` calls them [local dependencies](https://pdm-project.org/latest/usage/dependency/#local-dependencies), but then put [editable dependencies](https://pdm-project.org/latest/usage/dependency/#editable-dependencies) in a different section.
+
+### 3.2. `pre-commit` in a monorepo
+
+Can't just use [pre-commit](https://pre-commit.com/) normally because each project should have their own 
+
+TODO
+
+
+## Docs
+
+I like [mkdocs with material](https://squidfunk.github.io/mkdocs-material/getting-started/).
