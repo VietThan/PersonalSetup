@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../tools/aws-setup/">
+        <link rel="next" href="../../tools/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -482,6 +482,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -491,6 +502,124 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-wide-python-with-pyenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. System Wide Python with pyenv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-single-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Single Project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Single Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bare-no-dependency-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Bare (no dependency management)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-dependencies-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Dependencies Manager
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Dependencies Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#23-local-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Local .venv
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-monorepo-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Monorepo Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Monorepo Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-packages-depend-on-local-libs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Packages depend on local libs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-pre-commit-in-a-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. pre-commit in a monorepo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -521,16 +650,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tools/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Tools
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
@@ -713,6 +850,113 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-system-wide-python-with-pyenv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. System Wide Python with pyenv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-single-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Single Project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Single Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bare-no-dependency-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Bare (no dependency management)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-dependencies-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Dependencies Manager
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. Dependencies Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#23-local-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Local .venv
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-monorepo-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Monorepo Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Monorepo Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-packages-depend-on-local-libs" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Packages depend on local libs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-pre-commit-in-a-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. pre-commit in a monorepo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -730,6 +974,172 @@
 
 
 <h1 id="python-setup"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> Python Setup</h1>
+<h2 id="1-system-wide-python-with-pyenv">1. System Wide Python with <code>pyenv</code></h2>
+<p>If you're on Linux or Mac, there is already Python installed and you can use <code>python</code> on the command line out of the box. 
+However, it's usually out of date.</p>
+<p><img alt="Insert XKCD here" src="https://imgs.xkcd.com/comics/python_environment_2x.png" /></p>
+<p>But it's not advisable to upgrade your system python because all kinds of errors might pop up. </p>
+<details class="warning">
+<summary>Viet's Story</summary>
+<p>At once point, I tried to upgrade my <code>python</code> system wide on an Ubuntu machine to the latest <code>python3</code> version.</p>
+<p>My bash terminal died/won't start up.</p>
+<p>As it turns out bash was relying on <code>python</code> being symlinked to <code>python2.7</code> and I've messed up.</p>
+<p>Just let smarter people figure it out for you.</p>
+</details>
+<p><strong>Solution</strong>: Let <a href="https://github.com/pyenv/pyenv">pyenv</a> manages system-wide python.</p>
+<ol>
+<li>(Optional) read the README.md in its entirety</li>
+<li>Install pyenv<ol>
+<li>Don't forget to go through the "Setup shell environment for pyenv"</li>
+</ol>
+</li>
+<li>
+<p>Install like the 2 latest version of Python3 (might need system packages). For example:
+   <div class="copy highlight"><pre><span></span><code>pyenv install 3.10 3.11
+</code></pre></div></p>
+</li>
+<li>
+<p>Usage:</p>
+<blockquote>
+<p>To select a Pyenv-installed Python as the version to use, run one of the following commands:</p>
+<ol>
+<li><code>pyenv shell &lt;version&gt;</code> -- select just for current shell session</li>
+<li><code>pyenv local &lt;version&gt;</code> -- automatically select whenever you are in the current directory (or its subdirectories)</li>
+<li><code>pyenv global &lt;version&gt;</code> -- select globally for your user account</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<h2 id="2-single-project">2. Single Project</h2>
+<h3 id="21-bare-no-dependency-management">2.1. Bare (no dependency management)</h3>
+<p>At the very least use python's standard <a href="https://docs.python.org/3/library/venv.html">venv</a> and a <a href="https://realpython.com/what-is-pip/#using-requirements-files">requirements.txt</a>.</p>
+<p>Standard commands:</p>
+<div class="highlight"><pre><span></span><code>$ mkdir new_project
+$ cd new_project
+$ python3.11 -m venv venv
+</code></pre></div>
+<p>Do some coding using the venv and save the packages.</p>
+<div class="highlight"><pre><span></span><code>$ cd new_project
+$ venv/bin/python -m pip install requests
+$ venv/bin/python -m pip freeze &gt; requirements.txt
+</code></pre></div>
+<h3 id="22-dependencies-manager">2.2. Dependencies Manager</h3>
+<p>I am familiar with <a href="https://pdm-project.org/">PDM</a> and <a href="https://python-poetry.org/">poetry</a>. 
+They themselves also rely on python's standard <code>venv</code> (mentioned above).</p>
+<details class="note" open="open">
+<summary>Viet's Note</summary>
+<p>I am marginally excited about <a href="https://github.com/astral-sh/uv">uv</a>.</p>
+</details>
+<h4 id="23-local-venv">2.3. Local <code>.venv</code></h4>
+<p>It is important to always have a local <code>.venv</code> per project.
+This is to not cross-contaminate dependencies between different projects. And also makes it easy to package your project for pypi in the future.</p>
+<p>If using <code>poetry</code>, enable <a href="https://python-poetry.org/docs/configuration/#virtualenvsin-project">virtualenvs.in-project</a> to <code>true</code>:</p>
+<div class="highlight"><pre><span></span><code>$ cd a_poetry_project
+$ cat poetry.toml
+[virtualenvs]
+in-project = true
+</code></pre></div>
+<p>This would ensure the creation of a <code>.venv</code> managed by the dependency manager, containing the installed dependencies of the project</p>
+<p><code>pdm</code> creates local <code>.venv</code> out of the box.</p>
+<p>As such, in any project, you can expect the following structure:</p>
+<div class="highlight"><pre><span></span><code>.
+└── my-python-project/
+    ├── .venv/
+    │   ├── bin/
+    │   │   └── python
+    │   └── lib/
+    │       └── ...
+    ├── src/
+    │   └── my_python_project/
+    │       ├── __init__.py
+    │       └── main.py
+    ├── tests/
+    │   ├── __init__.py
+    │   └── test_main.py
+    ├── pyproject.toml
+    ├── README.md
+    └── pdm.lock_or_poetry.lock
+</code></pre></div>
+<h2 id="3-monorepo-python">3. Monorepo Python</h2>
+<p>Parent <code>VENV</code> with a <code>.helper_rc</code> (contains any bash commands you want). Each project has their own <code>.venv</code>.</p>
+<p>See the example in the expand:</p>
+<details class="note">
+<summary>Viet's Note</summary>
+<div class="highlight"><pre><span></span><code>.
+└── Big-MonoRepo/
+    ├── Lib-A/
+    │   ├── .venv/
+    │   │   ├── bin/
+    │   │   │   └── python
+    │   │   └── lib/
+    │   │       └── ...
+    │   ├── src/
+    │   │   └── lib_a/
+    │   │       ├── __init__.py
+    │   │       └── main.py
+    │   ├── tests/
+    │   │   ├── __init__.py
+    │   │   └── test_main.py
+    │   ├── pyproject.toml
+    │   ├── README.md
+    │   └── pdm.lock
+    ├── Service-A/
+    │   ├── .venv/
+    │   │   ├── bin/
+    │   │   │   └── python
+    │   │   └── lib/
+    │   │       └── ...
+    │   ├── src/
+    │   │   └── service_a/
+    │   │       ├── __init__.py
+    │   │       └── main.py
+    │   ├── tests/
+    │   │   ├── __init__.py
+    │   │   └── test_main.py
+    │   ├── pyproject.toml
+    │   ├── README.md
+    │   └── pdm.lock
+    ├── Service-B/
+    │   ├── .venv/
+    │   │   ├── bin/
+    │   │   │   └── python
+    │   │   └── lib/
+    │   │       └── ...
+    │   ├── src/
+    │   │   └── service_b/
+    │   │       ├── __init__.py
+    │   │       └── main.py
+    │   ├── tests/
+    │   │   ├── __init__.py
+    │   │   └── test_main.py
+    │   ├── pyproject.toml
+    │   ├── README.md
+    │   └── pdm.lock
+    ├── venv/
+    │   ├── bin/
+    │   │   └── python
+    │   └── lib/
+    │       └── ...
+    ├── docs/
+    │   └── index.md
+    ├── mkdocs.yaml
+    ├── docker-compose.yaml
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    └── big-monorepo.code-workspace # vscode workspace
+</code></pre></div>
+</details>
+<h3 id="31-packages-depend-on-local-libs">3.1. Packages depend on local libs</h3>
+<p>In the example above, let's say Service-A and Service-B relies on Lib-A, what to do?</p>
+<ol>
+<li><code>poetry</code> calls them <a href="https://python-poetry.org/docs/dependency-specification/#path-dependencies">path dependencies</a>. Note the <code>develop</code> attribute.</li>
+<li><code>pdm</code> calls them <a href="https://pdm-project.org/latest/usage/dependency/#local-dependencies">local dependencies</a>, but then put <a href="https://pdm-project.org/latest/usage/dependency/#editable-dependencies">editable dependencies</a> in a different section.</li>
+</ol>
+<h3 id="32-pre-commit-in-a-monorepo">3.2. <code>pre-commit</code> in a monorepo</h3>
+<p>Can't just use <a href="https://pre-commit.com/">pre-commit</a> normally because each project should have their own </p>
+<p>TODO</p>
+<h2 id="docs">Docs</h2>
+<p>I like <a href="https://squidfunk.github.io/mkdocs-material/getting-started/">mkdocs with material</a>.</p>
 
 
 
