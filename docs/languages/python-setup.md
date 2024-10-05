@@ -70,20 +70,20 @@ They themselves also rely on python's standard `venv` (mentioned above).
 
     I am marginally excited about [uv](https://github.com/astral-sh/uv).
 
-#### 2.3. Local `.venv`
+#### 2.2.1. Using the `pyproject.toml`
+
+[PEP-518](https://peps.python.org/pep-0518/) and [PEP-621](https://peps.python.org/pep-0621/) introduces and reinforces that the `pyproject.toml` is the primary configuration file for package management.
+
+Since then most Python tooling has moved to support configuration in this file instead of their own custom files.
+
+So for example, don't use a [pytest.ini](https://docs.pytest.org/en/stable/reference/customize.html#pytest-ini), use [pytest with pyproject.toml](https://docs.pytest.org/en/stable/reference/customize.html#pytest-ini). Don't use a [mypy.ini](https://docs.pytest.org/en/stable/reference/customize.html#pytest-ini), use [mypy with pyproject.toml](https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml-file)
+
+
+#### 2.2.2. Local `.venv`
 It is important to always have a local `.venv` per project.
 This is to not cross-contaminate dependencies between different projects. And also makes it easy to package your project for pypi in the future.
 
-If using `poetry`, enable [virtualenvs.in-project](https://python-poetry.org/docs/configuration/#virtualenvsin-project) to `true`:
-
-```{ ..console }
-$ cd a_poetry_project
-$ cat poetry.toml
-[virtualenvs]
-in-project = true
-```
-
-This would ensure the creation of a `.venv` managed by the dependency manager, containing the installed dependencies of the project
+If using `poetry`, enable [virtualenvs.in-project](https://python-poetry.org/docs/configuration/#virtualenvsin-project) to `true`. This would ensure the creation of a `.venv` managed by the dependency manager, containing the installed dependencies of the project.
 
 `pdm` creates local `.venv` out of the box.
 
