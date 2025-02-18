@@ -27,6 +27,7 @@ nav:
     - 'tools/index.md'
     - 'AWS Setup' : 'tools/aws-setup.md'
     - 'Wireshark Setup' : 'tools/wireshark-setup.md'
+    - 'Git Setup' : 'tools/git-setup.md'
   - 'Browsers':
     - 'Chrome Setup' : 'browsers/chrome-setup.md'
     - 'Firefox Setup' : 'browsers/firefox-setup.md'
