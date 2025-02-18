@@ -13,10 +13,6 @@
       
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../wireshark-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>AWS Setup - Viet's Personal Setup</title>
+        <title>Git Setup - Viet's Personal Setup</title>
       
     
     
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-setup" class="md-skip">
+        <a href="#git-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AWS Setup
+              Git Setup
             
           </span>
         </div>
@@ -517,19 +513,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           
@@ -551,7 +545,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -562,30 +556,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    AWS Setup
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../aws-setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -594,53 +568,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-aws-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Install AWS CLI
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-iam-identity-center" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. IAM Identity Center
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-login" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Login
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -799,41 +726,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-aws-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Install AWS CLI
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-iam-identity-center" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. IAM Identity Center
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-login" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Login
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -850,50 +742,8 @@
   
 
 
-<h1 id="aws-setup"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M180.41 203.01c-.72 22.65 10.6 32.68 10.88 39.05a8.16 8.16 0 0 1-4.1 6.27l-12.8 8.96a10.66 10.66 0 0 1-5.63 1.92c-.43-.02-8.19 1.83-20.48-25.61a78.6 78.6 0 0 1-62.61 29.45c-16.28.89-60.4-9.24-58.13-56.21-1.59-38.28 34.06-62.06 70.93-60.05 7.1.02 21.6.37 46.99 6.27v-15.62c2.69-26.46-14.7-46.99-44.81-43.91-2.4.01-19.4-.5-45.84 10.11-7.36 3.38-8.3 2.82-10.75 2.82-7.41 0-4.36-21.48-2.94-24.2 5.21-6.4 35.86-18.35 65.94-18.18a76.86 76.86 0 0 1 55.69 17.28 70.29 70.29 0 0 1 17.67 52.36zM93.99 235.4c32.43-.47 46.16-19.97 49.29-30.47 2.46-10.05 2.05-16.41 2.05-27.4-9.67-2.32-23.59-4.85-39.56-4.87-15.15-1.14-42.82 5.63-41.74 32.26-1.24 16.79 11.12 31.4 29.96 30.48m170.92 23.05c-7.86.72-11.52-4.86-12.68-10.37l-49.8-164.65c-.97-2.78-1.61-5.65-1.92-8.58a4.61 4.61 0 0 1 3.86-5.25c.24-.04-2.13 0 22.25 0 8.78-.88 11.64 6.03 12.55 10.37l35.72 140.83 33.16-140.83c.53-3.22 2.94-11.07 12.8-10.24h17.16c2.17-.18 11.11-.5 12.68 10.37l33.42 142.63L420.98 80.1c.48-2.18 2.72-11.37 12.68-10.37h19.72c.85-.13 6.15-.81 5.25 8.58-.43 1.85 3.41-10.66-52.75 169.9-1.15 5.51-4.82 11.09-12.68 10.37h-18.69c-10.94 1.15-12.51-9.66-12.68-10.75L328.67 110.7l-32.78 136.99c-.16 1.09-1.73 11.9-12.68 10.75h-18.3zm273.48 5.63c-5.88.01-33.92-.3-57.36-12.29a12.8 12.8 0 0 1-7.81-11.91v-10.75c0-8.45 6.2-6.9 8.83-5.89 10.04 4.06 16.48 7.14 28.81 9.6 36.65 7.53 52.77-2.3 56.72-4.48 13.15-7.81 14.19-25.68 5.25-34.95-10.48-8.79-15.48-9.12-53.13-21-4.64-1.29-43.7-13.61-43.79-52.36-.61-28.24 25.05-56.18 69.52-55.95 12.67-.01 46.43 4.13 55.57 15.62 1.35 2.09 2.02 4.55 1.92 7.04v10.11c0 4.44-1.62 6.66-4.87 6.66-7.71-.86-21.39-11.17-49.16-10.75-6.89-.36-39.89.91-38.41 24.97-.43 18.96 26.61 26.07 29.7 26.89 36.46 10.97 48.65 12.79 63.12 29.58 17.14 22.25 7.9 48.3 4.35 55.44-19.08 37.49-68.42 34.44-69.26 34.42m40.2 104.86c-70.03 51.72-171.69 79.25-258.49 79.25A469.13 469.13 0 0 1 2.83 327.46c-6.53-5.89-.77-13.96 7.17-9.47a637.37 637.37 0 0 0 316.88 84.12 630.2 630.2 0 0 0 241.59-49.55c11.78-5 21.77 7.8 10.12 16.38m29.19-33.29c-8.96-11.52-59.28-5.38-81.81-2.69-6.79.77-7.94-5.12-1.79-9.47 40.07-28.17 105.88-20.1 113.44-10.63 7.55 9.47-2.05 75.41-39.56 106.91-5.76 4.87-11.27 2.3-8.71-4.1 8.44-21.25 27.39-68.49 18.43-80.02"/></svg></span> AWS Setup</h1>
-<h2 id="1-install-aws-cli">1. Install AWS CLI</h2>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.938 0a.214.214 0 0 0-.206.156c-.316 1.104.179 2.15.838 2.935q.23.27.476.501a2 2 0 0 0-.665.02c-1.184.233-2.193.985-2.74 2.532a3.9 3.9 0 0 0-.2 1.466 1.565 1.565 0 0 0-1.156 1.504 1.59 1.59 0 0 0 1.227 1.541l.026 12.046c0 .195.1.377.264.482l.008.005c.537.31 2.047.812 5.21.812 3.238 0 4.7-.678 5.181-1.04l.008-.007a.57.57 0 0 0 .206-.439c.002-.344.002-1.136.002-1.604a.143.143 0 0 1 .147-.144c.397.006.869.006 1.318.005a1.826 1.826 0 0 0 1.832-1.825v-5.804a1.826 1.826 0 0 0-1.825-1.826H16.56a.14.14 0 0 1-.143-.144V10.6h.007v-.001a1.57 1.57 0 0 0 1.356-1.556c0-.816-.627-1.489-1.424-1.563-.025-1.438-.437-2.126-.736-2.58l-.005-.007c-.364-.51-1.193-1.282-2.275-1.316-.503-.016-.842.124-1.125.254-.217.1-.42.177-.67.22.002-1.286.945-1.981.945-1.981a.214.214 0 0 0 .05-.298s-.087-.122-.21-.26c-.121-.136-.269-.294-.47-.378a.2.2 0 0 0-.079-.017.21.21 0 0 0-.145.055 4.3 4.3 0 0 0-.875 1.101 3 3 0 0 0-.133.273 3.5 3.5 0 0 0-.381-.846C9.794.978 9.063.436 8.017.016A.2.2 0 0 0 7.939 0zm.156.524c.85.378 1.43.83 1.79 1.403.274.438.426.962.484 1.584a3 3 0 0 0-.012.462l-.168-.052a5.5 5.5 0 0 1-1.29-1.106c-.551-.657-.935-1.46-.804-2.291M11.8 1.618c.07.054.141.101.212.18.034.039.032.04.058.073-.332.308-1.07 1.144-.952 2.453a.214.214 0 0 0 .222.195c.469-.017.782-.172 1.056-.299.273-.126.508-.228.931-.214.875.027 1.639.715 1.939 1.134.295.449.65 1 .663 2.36a1.7 1.7 0 0 0-.41.142 1.94 1.94 0 0 0-1.77-1.16 1.94 1.94 0 0 0-1.87 1.448 1.78 1.78 0 0 0-1.356-.64c-.484 0-.91.205-1.233.517a1.87 1.87 0 0 0-1.85-1.625c-.649 0-1.218.335-1.552.84a3 3 0 0 1 .157-.735c.51-1.437 1.355-2.045 2.42-2.254.367-.073.664-.011.99.095s.671.262 1.094.342a.214.214 0 0 0 .252-.245c-.112-.67.073-1.266.336-1.744a3.7 3.7 0 0 1 .663-.863M7.44 6.611a1.442 1.442 0 0 1 1.363 1.925.214.214 0 0 0 .168.283h.005a.214.214 0 0 0 .238-.146 1.373 1.373 0 0 1 2.613-.01.214.214 0 0 0 .417-.09 1.51 1.51 0 0 1 1.504-1.664c.678 0 1.249.445 1.442 1.056a.214.214 0 0 0 .259.143l.15-.04a.2.2 0 0 0 .051-.02 1.14 1.14 0 0 1 1.702.995 1.14 1.14 0 0 1-.985 1.131h-.001a2.2 2.2 0 0 0-.485.126 11 11 0 0 1-1.176.365.21.21 0 0 0-.162.186 1.3 1.3 0 0 1-.146.478 2.07 2.07 0 0 0-.239 1.111l.001.151a.44.44 0 0 1-.16.36.67.67 0 0 1-.43.14.586.586 0 0 1-.588-.59.8.8 0 0 0-.38-.681l-.002-.002c-.24-.145-.43-.37-.532-.636a.21.21 0 0 0-.207-.138 19.5 19.5 0 0 1-5.37-.6l-.003-.002a9 9 0 0 0-.838-.194h.003a1.16 1.16 0 0 1-.937-1.134c0-.619.488-1.118 1.101-1.14a.214.214 0 0 0 .204-.176 1.44 1.44 0 0 1 1.42-1.187m8.549 4.106v.455c0 .314.259.573.572.573h1.329a1.397 1.397 0 0 1 1.397 1.397v5.804a1.396 1.396 0 0 1-1.402 1.396h-.002c-.448.002-.918 0-1.31-.005a.573.573 0 0 0-.584.573c0 .468 0 1.262-.002 1.603v.001q-.002.065-.05.107c-.346.26-1.75.95-4.915.95-3.107 0-4.587-.52-4.99-.752a.14.14 0 0 1-.065-.118l-.025-11.955q.217.05.431.11h.003c.115.031.246.064.383.097v10.37c0 .129.069.247.18.31.453.217 1.767.732 4.071.732 2.32 0 3.595-.626 4.022-.884a.36.36 0 0 0 .164-.3l.001-10.21q.4-.111.792-.254m-7.99.894a.493.493 0 0 1 .494.493v8.578a.493.493 0 0 1-.493.493.493.493 0 0 1-.494-.493v-8.578A.493.493 0 0 1 8 11.611zm8.652 1.14a.663.663 0 0 0-.662.662v5.208a.663.663 0 0 0 .662.662h1.14a.663.663 0 0 0 .662-.662v-5.209a.663.663 0 0 0-.662-.662zm0 .428h1.14a.233.233 0 0 1 .233.233v5.21a.233.233 0 0 1-.233.232h-1.14a.233.233 0 0 1-.233-.233v-5.209a.233.233 0 0 1 .233-.233"/></svg></span> install <a href="https://formulae.brew.sh/formula/awscli">awscli</a></p>
-<div class="highlight"><pre><span></span><code>brew install awscli
-</code></pre></div>
-<h2 id="2-iam-identity-center">2. IAM Identity Center</h2>
-<ol>
-<li>Enable IAM identity center management</li>
-<li>Create an user</li>
-<li>Create a group (for SuperRoots)</li>
-<li>Create a Permission Set</li>
-<li>Create AWS accounts</li>
-<li>Do the below</li>
-</ol>
-<div class="highlight"><pre><span></span><code>$ aws configure sso
-SSO session name (Recommended): VietThan-Admin-SSO
-SSO start URL [None]: https://d-9067c6f14b.awsapps.com/start
-SSO region [None]: us-east-1
-SSO registration scopes [sso:account:access]:
-Attempting to automatically open the SSO authorization page in your default browser.
-If the browser does not open or you wish to use a different device to authorize this request, open the following URL:
-
-https://oidc.us-east-1.amazonaws.com/authorize........
-The only AWS account available to you is: &lt;aws account&gt;
-Using the account ID &lt;aws account&gt;
-The only role available to you is: AdministratorAccess
-Using the role name &quot;AdministratorAccess&quot;
-CLI default client Region [None]: us-east-1
-CLI default output format [None]:
-CLI profile name [AdministratorAccess-&lt;aws account&gt;]: VietThan-Admin-SSO
-
-To use this profile, specify the profile name using --profile, as shown:
-
-aws s3 ls --profile VietThan-Admin-SSO
-</code></pre></div>
-<h2 id="3-login">3. Login</h2>
-<div class="highlight"><pre><span></span><code># 1. login with AWS CLI
-aws sso login --profile VietThan-Admin-SSO
-
-# export the environment variables of the account
-eval &quot;$(aws configure export-credentials --profile VietThan-Admin-SSO --format env)&quot;
-
-# export region
-export AWS_DEFAULT_REGION=&quot;us-east-1&quot;
+<h1 id="git-setup">Git Setup</h1>
+<div class="highlight"><pre><span></span><code>git config --global pull.rebase false
 </code></pre></div>
 
 
